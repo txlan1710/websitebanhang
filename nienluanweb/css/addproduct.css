@@ -1,0 +1,12 @@
+body {
+    padding: 10px;
+    margin: 1px;
+    box-sizing: border-box;
+    line-height: 35px;
+    font-family: "Roboto","HelveticaNeue","Helvetica Neue",sans-serif;
+
+}
+
+.header {
+    display: flex;
+}

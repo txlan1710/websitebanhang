@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto","HelveticaNeue","Helvetica Neue",sans-serif;
+  }
+
+body {
+    line-height: 35px;
+    font: #737373;
+    font-size: 15px;
+  }
+
+.content {
+    display: flex;
+    padding: 0 5%;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrap {
+    display: flex;
+    padding: 40px;
+}
+
+a {
+  border: none;
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 19px;
+  margin-top: 7px;
+}
+
+.divider {
+  margin: 10px 0px;
+  background-color: #fff;
+  background: url(https://ananas.vn/wp-content/themes/ananas/fe-assets/images/bg_divider.png) repeat-x 7px;
+  height: 2px;
+}
+
+/* col 1 */
+
+.main {
+  padding-right: 60px;
+  margin: 0;
+}
+
+.section-header {
+  border-bottom: solid 1px #737373;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.field-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.field-input-wrapper label {
+  font-weight: 600;
+  margin-bottom: -3px;
+  padding: 0;
+}
+
+.field-input-wrapper input {
+  padding: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px;
+}
+
+
+.section-header-pay h2 {
+  margin-bottom: 10px;
+}
+
+.content-box-row {
+  border: solid 1.5px #737373;
+  padding: 20px;
+}
+
+.row-secondary {
+  border-top: none;
+  background-color: #fafafa;
+}
+
+
+.step-footer {
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
+.step-footer a {
+  padding-right: 200px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* button pay */
+
+.step-footer button {
+  display: inline-block;
+  padding: 9px 49px;
+  background: #252525;
+  border: 0.5px solid #252525;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18/14);
+  color: #F7F7F7 !important;
+  margin: 0;
+}
+
+/* col secondary  */
+
+.sidebar {
+  border-left: solid 1px #737373;
+  margin: 0px;
+  padding: 0;
+}
+
+.sidebar-content {
+  margin-left: 40px;
+}
+
+.product-desription {
+  display: block;
+  /* flex-direction: column; */
+  margin: 10px;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.size {
+  color: #737373;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.name-product-order {
+  margin-bottom: -15px;
+  display: block;
+  padding-right: 50px ;
+}
+
+.product-table {
+  border-bottom: solid 1px #737373;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.total-product-order {
+  border-bottom: solid 1px #737373;
+  margin: 10px 0;
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.total-title {
+  padding-right: 280px;
+}
+
