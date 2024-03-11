@@ -33,7 +33,7 @@ session_start();
         ('$dbname', '$dbemail', '$dbpass', '$dbphone')";
             $query = mysqli_query($conn, $addsql);
             if($query) {
-                header('location: trangchu.php');
+                header('location:Home.php');
             }
     }
     }
@@ -65,8 +65,10 @@ session_start();
             if(mysqli_num_rows($query) == 0) {
                 $checkErr_L = "email và password không hợp lệ vui lòng kiểm tra lại";
             }else {
+                $userData = mysqli_fetch_assoc($query);
+
                 $checkErr_L = "Thành công";
-                $_SESSION['username'] = $username;
+                $_SESSION['customer_id'] = $userData['C_ID'];
                 header("location:Home.php");
         }
         }

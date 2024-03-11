@@ -1,13 +1,13 @@
 <?php
     session_start();
-
+    $customer_id = $_SESSION['customer_id'];
     require_once("../admin/customer/connection.php");
 
 
     // show product
     
 
-        $sqlShow = "SELECT * FROM RECEIPT_DETAIL AS R LEFT JOIN PRODUCT AS P ON R.P_ID=P.P_ID";
+        $sqlShow = "SELECT * FROM RECEIPT_DETAIL AS R LEFT JOIN PRODUCT AS P ON R.P_ID=P.P_ID AND C_ID=$customer_id ";
         
         $query = mysqli_query($conn, $sqlShow);
 

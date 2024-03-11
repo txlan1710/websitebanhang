@@ -4,6 +4,7 @@
     $dbid = $_POST['id_product'];
     $dbSize = $_POST['size'];
     $dbQuantity =$_POST['quantity'];
+    $customer_id = $_SESSION['customer_id'];
 
     // connect database
     require_once("../admin/customer/connection.php");
@@ -16,7 +17,7 @@
             $_SESSION['status'] = "Sản phẩm đã tồn tại trong giỏ hàng";
             header('location:cart.php');
         }else{
-            $addproduct = "INSERT INTO RECEIPT_DETAIL (P_ID, quantity, SIZE) VALUES ($dbid, $dbQuantity, '$dbSize')";
+            $addproduct = "INSERT INTO RECEIPT_DETAIL (P_ID, C_ID, quantity, SIZE) VALUES ($dbid, $customer_id,  $dbQuantity, '$dbSize')";
             
             $query = mysqli_query($conn, $addproduct);
             if($query){
